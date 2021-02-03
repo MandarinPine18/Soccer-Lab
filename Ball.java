@@ -10,16 +10,16 @@ public class Ball {
   public String getMake() {
     return make;
   }
-  
-  public String getColor() {
-    return color;
-  }
-  
+
   public void setMake(String make) {
     this.make = make;
   }
-  
-  public void getColor(String color) {
+
+  public String getColor() {
+    return color;
+  }
+
+  public void setColor(String color) {
     this.color = color;
   }
 
