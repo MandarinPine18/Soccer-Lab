@@ -14,18 +14,46 @@ public class Main {
 
   public static void main(String[] args) {
     // these are the hardcoded values for the objects
-    String team1 = "Manchester United";
-    String team2 = "Southampton";
-    Ball ball = new Ball("Nike", "white");
+    // arrays are used to keep the data organized and readable
+    String[][] teams = {
+            {"Manchester United", "Southampton"},
+            {"Newcastle", "Crystal Palace"}
+    };
+    Ball[] balls = {
+            new Ball("Nike", "white"),
+            new Ball("Wilson", "red")
+    };
 
     // if in user input mode, the user will be asked to enter the above values
     if (userInputMode) {
-      team1 = input("Please enter the name of the first team: ");
-      team2 = input("Please enter the name of the second team: ");
-      ball.setMake(input("Please enter the make of the ball: "));
-      ball.setColor(input("Please enter the color of the ball: "));
+      // this is a way for me to easily separate the inputs between the games for the user
+      String[] headers = {"First game information: ", "\nSecond game information: "};
+
+      // this loop gets the information for both the games
+      for (int i = 0; i < 2; i++) {
+        System.out.println(headers[i]);
+        teams[i][0] = input("Please enter the name of the first team: ");
+        teams[i][1] = input("Please enter the name of the second team: ");
+        balls[i].setMake(input("Please enter the make of the ball: "));
+        balls[i].setColor(input("Please enter the color of the ball: "));
+      }
     }
 
+    // make the games from the information previously written or requested
+    Game[] games = {
+            new Game(teams[0][0], teams[0][1], balls[0]),
+            new Game(teams[1][0], teams[1][1], balls[1])
+    };
+
+    System.out.println(games[0]);
+    System.out.println(games[1]);
+
+    // I will alter the ball of the second game
+    System.out.println();
+    games[1].getBall().setColor("blue");
+
+    System.out.println(games[0]);
+    System.out.println(games[1]);
   }
 
   // This just abstracts the process of getting input
