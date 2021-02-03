@@ -20,10 +20,10 @@ public class Ball {
   }
   
   public void getColor(String color) {
-    this.color = color
+    this.color = color;
   }
 
-  public copy() {
+  public Ball copy() {
     return new Ball(make, color);
   }
 }
