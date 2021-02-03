@@ -37,6 +37,7 @@ public class Main {
         balls[i].setMake(input("Please enter the make of the ball: "));
         balls[i].setColor(input("Please enter the color of the ball: "));
       }
+      System.out.println();
     }
 
     // make the games from the information previously written or requested
