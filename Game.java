@@ -30,7 +30,7 @@ public class Game {
   }
 
   public void setBall(Ball ball) {
-    this.ball = ball;
+    this.ball = ball.copy();
   }
 
   public String toString() {
