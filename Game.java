@@ -34,6 +34,6 @@ public class Game {
   }
 
   public String toString() {
-    return "This match is between " + team1 + " and " + team2 + " and was played with a " + ball.getMake() + " ball that is " + ball.getColor();
+    return "This match is between " + team1 + " and " + team2 + " and was played with a " + ball.getMake() + " ball that is " + ball.getColor() + ".";
   }
 }
