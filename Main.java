@@ -8,9 +8,9 @@ public class Main {
    * for demonstration. The following boolean sets which mode to run the program in. To run with user input, please set
    * it to true. To run with hardcoded values, please set this to false.
    *
-   * By default, the program will run with no user input
+   * By default, the program will run with user input
    */
-  public static final boolean userInputMode = false;
+  public static final boolean userInputMode = true;
 
   public static void main(String[] args) {
     // these are the hardcoded values for the objects
