@@ -13,6 +13,19 @@ public class Main {
   public static final boolean userInputMode = false;
 
   public static void main(String[] args) {
+    // these are the hardcoded values for the objects
+    String team1 = "Manchester United";
+    String team2 = "Southampton";
+    Ball ball = new Ball("Nike", "white");
+
+    // if in user input mode, the user will be asked to enter the above values
+    if (userInputMode) {
+      team1 = input("Please enter the name of the first team: ");
+      team2 = input("Please enter the name of the second team: ");
+      ball.setMake(input("Please enter the make of the ball: "));
+      ball.setColor(input("Please enter the color of the ball: "));
+    }
+
   }
 
   // This just abstracts the process of getting input
