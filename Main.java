@@ -14,7 +14,7 @@ public class Main {
 
   public static void main(String[] args) {
     // these are the hardcoded values for the objects
-    // arrays are used to keep the data organized and readable
+    // arrays are used to keep the data organized and readable as well as to make getting user input much more straightforward
     String[][] teams = {
             {"Manchester United", "Southampton"},
             {"Newcastle", "Crystal Palace"}
