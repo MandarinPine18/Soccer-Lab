@@ -1,0 +1,4 @@
+# This file defines what not to sync with version control
+
+# java oompiled files
+*.class
